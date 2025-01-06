@@ -55,23 +55,26 @@ This project is ideal for individuals or teams aiming to monitor and analyze fit
 ```bash
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
-
+```
 Set Up Virtual Environment
-bash
-Copy code
+
+```bash
+
 python -m venv venv
 source venv/bin/activate  # For Linux/Mac
 venv\Scripts\activate     # For Windows
+
+```
 3. Install Dependencies
-bash
-Copy code
+
+```bash
 pip install -r requirements.txt
-4. Run the Application
-bash
-Copy code
+```
+
+```bash
 python app.py
 Open your browser and navigate to http://127.0.0.1:5000/.
-
+```
 
 Usage
 Dashboard Features
