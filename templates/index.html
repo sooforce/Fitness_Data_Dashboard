@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Data Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Fitness Data Dashboard</h1>
+    <form id="fitnessForm">
+        <input type="date" id="date" name="date" required>
+        <input type="text" id="activity" name="activity" placeholder="Activity" required>
+        <input type="number" id="repeats" name="repeats" placeholder="Repeats" required>
+        <input type="number" id="sets" name="sets" placeholder="Sets" required>
+        <button type="submit">Add Data</button>
+    </form>
 
+    <div id="categorySection">
+        <input type="text" id="categoryName" placeholder="Category Name">
+        <button id="categorizeButton">Categorize Selected</button>
+        <button id="deleteButton" class="delete">Delete Selected</button>
+        <button id="editButton" class="edit">Edit Selected</button>
+    </div>
+    <br>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th onclick="sortTable(1)">Date</th>
+                <th onclick="sortTable(2)">Activity</th>
+                <th onclick="sortTable(3)">Sets</th>
+                <th onclick="sortTable(4)">Repeats</th>
+                <th onclick="sortTable(5)">Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
