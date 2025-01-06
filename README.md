@@ -1,6 +1,8 @@
+# Project Description
+
 This project is a Fitness Data Dashboard designed to track and manage physical activity records effectively. It provides a user-friendly interface for recording workout sessions, categorizing data, and analyzing trends. Built with Flask and SQLite, the application enables users to manage fitness data with CRUD (Create, Read, Update, Delete) operations.
 
-Key Features:
+# Key Features:
 
 - Activity Tracking:
 
@@ -61,12 +63,12 @@ This project is ideal for individuals or teams aiming to monitor and analyze fit
 
 ## Installation
 
-### 1. Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
 ```
-Set Up Virtual Environment
+### Set Up Virtual Environment
 
 ```bash
 
@@ -75,7 +77,7 @@ source venv/bin/activate  # For Linux/Mac
 venv\Scripts\activate     # For Windows
 
 ```
-3. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -86,7 +88,7 @@ python app.py
 Open your browser and navigate to http://127.0.0.1:5000/.
 ```
 
-Dashboard Features
+## Dashboard Features
 
 - Add Activity: Use the form to log a new activity with date, type, sets, and repetitions.
 
@@ -111,11 +113,11 @@ Dashboard Features
 - POST /categorize: Assign a category to selected entries.
 
 
-File Structure
+## File Structure
 
 ![image](https://github.com/user-attachments/assets/de8dea66-95fa-4273-90b3-8258cbf157b8)
 
-Technologies Used
+## Technologies Used
 
 - Backend: Flask, Flask-SQLAlchemy
 - Frontend: HTML, CSS, JavaScript
@@ -127,6 +129,6 @@ Technologies Used
 - Enable export of fitness data to CSV or PDF formats.
 - Introduce notifications/reminders for fitness goals.
 
-Contributing
+## Contributing
 
 - Contributions are welcome! Please fork the repository, create a branch for your changes, and submit a pull request with detailed descriptions.
